@@ -1,0 +1,16 @@
+def max_continuous_sum(list):
+	current_sum = max_sum = 0
+	starting_index = ending_index = 0
+
+	for index,num in enumerate(list):
+		current_sum += num
+		if current_sum < 0:
+			starting_index = index+1
+			current_sum = 0
+		elif current_sum > max_sum:
+			ending_index = index
+			max_sum = current_sum
+	
+	if max_sum == 0:
+		starting_index = ending_index = 0
+	return starting_index, ending_index, max_sum 

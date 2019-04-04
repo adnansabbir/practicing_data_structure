@@ -1,0 +1,16 @@
+def pair_sum(list,num):
+	pairs = []
+
+	if len(list) <2:
+		return pair
+	else:
+		list.sort()
+		for index, number1 in ennumarate(list):
+			for number2 in list[index+1:]
+				if number2 > num:
+					break
+				elif number1 + number2 == num:
+					pair.append([number1,number2])
+			if number1 >num:
+				break
+	return pair

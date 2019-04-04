@@ -1,0 +1,13 @@
+import re
+
+def anagram(sentenceA,sentenceB):
+	sentenceA = re.sub(r'\W+','',sentenceA)
+	sentenceB = re.sub(r'\W+','',sentenceB)
+	
+	#Edge Case Check	
+	if len(sentenceA) != len(sentenceB):
+		return False
+
+	return sorted(sentenceA) == sorted(sentenceB)
+
+print(anagram('doga aged', 'od aged ag'))

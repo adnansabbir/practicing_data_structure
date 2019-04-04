@@ -1,0 +1,14 @@
+def selectionSort(numbers):
+	for i in range(len(numbers)-1):
+		min_number = min(numbers[i:])
+		index_min = numbers.index(min_number)
+		if numbers[i] > min_number:
+			numbers[i],numbers[index_min] = numbers[index_min],numbers[i]
+	return numbers
+
+def main():
+	numbers = [2,1,3]
+	selectionSort(numbers)
+	print(numbers)
+
+main()

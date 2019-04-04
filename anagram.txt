@@ -1,0 +1,28 @@
+def anagram(sentenceA,sentenceB):
+	sentenceA_dict = {}
+	sentenceB_dict = {}
+	
+	for character in list(sentenceA):
+		if character.isalpha():
+			try:
+				sentenceA_dict[character.lower()] +=1
+			except:
+				sentenceA_dict[character.lower()] = 1
+
+	for character in list(sentenceB):
+		if character.isalpha():
+			try:
+				sentenceB_dict[character.lower()] +=1
+			except:
+				sentenceB_dict[character.lower()] =1
+	
+	if len(sentenceA_dict) != len(sentenceB_dict):
+		return False 
+	for key, value in sentenceA_dict.items():
+		try:
+			sentenceA_dict[key] == value
+		except:
+			return False
+	return True
+
+print(anagram('doga aged', 'od aged ag'))

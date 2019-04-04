@@ -1,0 +1,8 @@
+def digitsum(number):
+	if len(str(number)) == 1:
+		return int(number)
+	num_str = str(number)
+	total = 0
+	for i in num_str:
+		total+=int(i)
+	return digitsum(total)
