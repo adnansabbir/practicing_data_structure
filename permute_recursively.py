@@ -1,0 +1,14 @@
+def permute_recursive(s):
+    out = []
+
+    if len(s) == 1:
+        return [s]
+
+    else:
+        for i, let in enumerate(s):
+            for perm in permute_recursive(s[:i] + s[i + 1:]):
+                out += [let + perm]
+    return out
+
+
+print(permute_recursive("ABC"))
