@@ -14,3 +14,6 @@ _This is the implementation of find the permutation of a string recursively. Exa
 ## min_coin_recursive: ##
 _This is the recursive implementation of the popular minimum coin finding problem. For example it the amount is 10 and we have a list of [1,5,10] coins. It will find the min number of coins required to make that amount. In this case it is a coin of 10. So, it will return 1_
 
+## min_coin_recursive_memoization: ##
+_This is the solution of min_coin_recursive but includes memoization. __Memoization__ is the process of storing data in cache so the we don't have a recalculate things. While it takes some space it saves a lots of time and processing_
+

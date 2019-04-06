@@ -1,7 +1,15 @@
 from nose.tools import assert_equal
-def min_coin(target, coins):
+from collections import defaultdict
+def min_coin(target, coins, min_coin_dict = None):
+	
+	if min_coin_dict == None:
+		min_coin_dict = defaultdict(int)
+
+	if min_coin_dict[target]!=0:
+		return min_coin_dict[target]
 
 	if target in coins:
+		min_coin_dict[target] = 1
 		return 1
 	
 	if len([c for c in coins if c<=target]) == 0:
@@ -9,11 +17,13 @@ def min_coin(target, coins):
 	
 	min_no = 0
 	for i in [c for c in coins if c<=target]:
-		min = min_coin(target-i, coins)
+		min = min_coin(target-i, coins, min_coin_dict)
 		if min != 0:
 			no_of_coins = 1+min 
 			if no_of_coins<min_no or min_no==0:
 				min_no = no_of_coins
+	
+	min_coin_dict[target] = min_no
 	return min_no
 
 
