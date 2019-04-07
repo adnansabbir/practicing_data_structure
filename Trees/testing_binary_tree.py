@@ -14,7 +14,7 @@ bin_tree.print_tree()
 
 # preorder(bin_tree)
 # postorder(bin_tree)
-inorder(bin_tree)
+# inorder(bin_tree)
 #
 # list = [1,2,3,4]
 # print(list.pop())

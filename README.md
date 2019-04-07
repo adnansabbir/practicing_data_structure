@@ -22,3 +22,6 @@ _This is the solution of min_coin_recursive but includes memoization. __Memoizat
 ### Binary Tree: ###
 _This is the implementation of Binary tree with a class. The __binary_tree_traversal__ is used to traverse the binary tree_
 
+### Binary Min Heap: ###
+_This is the implementation of __Binary Min Heap__ with a class. The __testing_binary_min_heap__ is used to test the __Binary Min Heap___
+
