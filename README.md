@@ -25,3 +25,6 @@ _This is the implementation of Binary tree with a class. The __binary_tree_trave
 ### Binary Min Heap: ###
 _This is the implementation of __Binary Min Heap__ with a class. The __testing_binary_min_heap__ is used to test the __Binary Min Heap___
 
+### Binary Search Tree: ###
+_This is the implementation of __Binary Search Tree__ with a class. The __testing_binary_search_tree__ is used to test the __Binary Search Tree___
+

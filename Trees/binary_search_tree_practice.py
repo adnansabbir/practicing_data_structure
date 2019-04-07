@@ -6,5 +6,4 @@ mytree[4]="blue"
 mytree[6]="yellow"
 mytree[2]="at"
 
-print(mytree[6])
 print(mytree[2])
