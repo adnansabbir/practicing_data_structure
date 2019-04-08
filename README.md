@@ -28,3 +28,8 @@ _This is the implementation of __Binary Min Heap__ with a class. The __testing_b
 ### Binary Search Tree: ###
 _This is the implementation of __Binary Search Tree__ with a class. The __testing_binary_search_tree__ is used to test the __Binary Search Tree___
 
+## Search and Sort ##
+
+### sequential_search: ###
+_This file contains 2 functions of sorted and unsorted sequential search and test function._
+
